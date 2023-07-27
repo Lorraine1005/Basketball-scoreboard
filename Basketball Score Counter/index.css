@@ -1,0 +1,100 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pangolin", cursive;
+  background-image: url(img/bb.jpg);
+  background-size: cover;
+}
+.counter-container {
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem #00000055;
+  padding: 0rem 3.8rem 6rem;
+  max-width: 40rem;
+  margin: 0rem auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 11px;
+  border: 2px solid red;
+}
+.scoreboards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+.flags {
+  padding: 2rem 3rem;
+  max-width: 40rem;
+  margin: 7rem auto 0rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 5rem;
+  background-color: #eae0e001;
+  backdrop-filter: blur(10px);
+  border-radius: 2.4rem;
+}
+.flag {
+  width: 8rem;
+  height: 5rem;
+}
+.home-team-box,
+.away-team-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  font-size: 3rem;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  background-color: #eae0e050;
+  color: red;
+  border-radius: 9px;
+}
+#score-el,
+#away-score-el {
+  margin-top: 0;
+  font-size: 4.8rem;
+  background-color: red;
+  padding: 2rem;
+  border-radius: 200px;
+  color: #fff;
+}
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #eae0e080;
+  color: red;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 11px;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #00000036;
+}
+.btns {
+  display: flex;
+  gap: 0.5rem;
+}
+#game-reset {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1rem 2rem;
+  width: 20rem;
+  text-transform: uppercase;
+  color: red;
+  background-color: #eae0e080;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #00000036;
+  border-radius: 9px;
+  border: none;
+  font-weight: 500;
+}
+#game-reset:hover {
+  background-color: red;
+  color: #fff;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Basketball Counter</title>
+  </head>
+  <body>
+    <div class="flags">
+      <img
+        src="img/Flag-Andorra.webp"
+        alt="Andorran flag"
+        class="flag andorra"
+      />
+      <img src="img/Flag-Canada.webp" alt="Canadian flag" class="flag canada" />
+    </div>
+    <div class="counter-container">
+      <div class="scoreboards">
+        <div class="home-team-box">
+          <p class="name">home</p>
+          <p id="score-el">00</p>
+          <div class="btns">
+            <button class="btn" id="addone" onclick="add1()">+1</button>
+            <button class="btn" id="addtwo" onclick="add2()">+2</button>
+            <button class="btn" id="addthree" onclick="add3()">+3</button>
+          </div>
+        </div>
+
+        <div class="away-team-box">
+          <p class="name">Away</p>
+          <p id="away-score-el">00</p>
+          <div class="btns-away btns">
+            <button class="btn" id="addone" onclick="awayAdd1()">+1</button>
+            <button class="btn" id="addtwo" onclick="awayAdd2()">+2</button>
+            <button class="btn" id="addthree" onclick="awayAdd3()">+3</button>
+          </div>
+        </div>
+      </div>
+      <button id="game-reset" onclick="gameReset()">New Game</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
